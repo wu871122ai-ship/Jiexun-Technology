@@ -1,0 +1,37 @@
+Windows PowerShell：
+Compress-Archive -Path index.html,services.html,process.html,cases.html,about.html,contact.html,legal.html,styles.css,main.js -DestinationPath jiexun-official-website.zip -Force
+
+--
+
+macOS / Linux：
+zip -r jiexun-official-website.zip index.html services.html process.html cases.html about.html contact.html legal.html styles.css main.js
+
+--
+
+最終驗收清單
+九檔同目錄、UTF-8、檔名大小寫一致；開 index.html，Console 無紅字。
+全站公司名為「傑訊科技開發有限公司」；首頁、簡介、頁尾出現地址「台北市萬華區西園路二段322號12樓之1」。
+統一編號未被編造，顯示為「核定中／待確認」。
+九大服務卡完整，第 09 項為商品服務；services.html?svc=09 自動展開金框高亮。
+contact.html?svc=09 下拉已預選；填妥送出跳出 Email 草稿，主旨含「09 商品服務｜品牌設計 × 網站製作 × App 開發」。
+電話可撥號、Email 可寄信；LINE 為文字＋搜尋提示。
+流程頁「下載商務提案表模板」產生 .txt，含 01–09 勾選欄；可見四步↔六階段對應與詢盤→階段 1 說明。
+案例頁不在導覽列、head 含 noindex、不虛構客戶；CASES=[] 時顯示優雅骨架。
+法務頁三節有錨點導覽與技術性最小聲明並標 A9。
+手改 ?svc=99／?svc=09 以外之非法值：不高亮、不回填、不報錯。
+縮窗 ≤880px 漢堡可用、HUD 轉內容流；系統開「減少動態效果」後動態停止、內容完整、HUD 轉 REDUCED／PAUSED 但 SCROLL 仍真實更新。
+首頁光軌／星域／節點連線／glitch／游標光暈／掃描線／tilt／reveal 皆作用；HUD 數字即時跳動（真實計算）。
+殘留佔位僅為 {{SITE_URL}}、{{UNIFIED_BNO}}（統編）、assets/logo.svg 路徑——皆因未提供，未被編造。
+
+--
+項目               |  目前處理                                             |需要補上提供
+統一編號           |頁尾／about 標「核定中」；JSON-LD 未放入 taxID           |登記資料
+域名 {{SITE_URL}}  |canonical／og／JSON-LD url／logo 路徑佔位               |託管後實際網址      
+Logo 向量檔        |品牌幾何 SVG 佔位（視覺完整）                            |assets/logo.svg    
+董事長肖像          |字母几何卡  授權照片                                    |assets/portrait.jpg                               
+真實案例            |CASES=[] ＋ noindex 預留                               |逐案欄位＋書面授權
+og:image           |不放破圖                                               |assets/og-image.png 1200×630
+法務全文            |技術性最小聲明                                         |法務／律師定稿
+Qtfmè／雲填鏈       |不公開／統一用「區塊鏈」並註記                           |內部確認
+
+--
