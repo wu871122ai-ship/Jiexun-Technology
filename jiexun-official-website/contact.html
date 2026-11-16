@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>聯絡我們｜傑訊科技開發有限公司</title>
+<meta name="description" content="專案詢盤表單（mailto 版）、可點擊名片聯絡資訊與聯絡常見問題；可自服務頁以 ?svc=0X 預選九大核心服務，包含品牌設計、網站製作與 App 開發之商品服務。"/>
+<link rel="canonical" href="{{SITE_URL}}/contact.html"/>
+<meta property="og:title" content="聯絡我們｜傑訊科技開發有限公司"/>
+<meta name="theme-color" content="#05060a"/>
+<link rel="stylesheet" href="styles.css"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"回覆時效？","acceptedAnswer":{"@type":"Answer","text":"將於下一個工作天內回覆。"}},
+ {"@type":"Question","name":"初次諮詢是否收費？","acceptedAnswer":{"@type":"Answer","text":"初次諮詢範圍於回覆信中確認，未核定前不作收費承諾。"}},
+ {"@type":"Question","name":"是否保密？","acceptedAnswer":{"@type":"Answer","text":"可於合約階段約定 NDA；具體條款屬法務待確認項。"}},
+ {"@type":"Question","name":"商品服務是否保證 App 上架？","acceptedAnswer":{"@type":"Answer","text":"不提供上架保證；我們會協助測試、版本建置與上架文件準備，最終審核由应用商店决定。"}}
+]}
+</script>
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<main id="main" class="page">
+  <div class="wrap">
+    <h2 class="sec reveal">啟動專案詢盤</h2>
+    <p class="lead reveal">
+      表單採 mailto 版：送出後將組裝 Email 草稿送達本公司信箱。本表單經 Email 送達、非即時資料庫寫入，
+      且不支援真附件，附件請於信中另行說明或後續補寄。自服務頁點選「就此服務詢盤」將自動預選期望服務。
+    </p>
+
+    <form id="inq" novalidate class="reveal">
+      <div><label for="f-name">姓名 *</label><input id="f-name" name="name" required autocomplete="name"/></div>
+      <div><label for="f-co">公司名稱</label><input id="f-co" name="company" autocomplete="organization"/></div>
+      <div><label for="f-title">職稱</label><input id="f-title" name="title" autocomplete="organization-title"/></div>
+      <div><label for="f-mail">Email *</label><input id="f-mail" name="email" type="email" required autocomplete="email"/></div>
+      <div><label for="f-tel">電話</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"/></div>
+      <div><label for="f-line">LINE</label><input id="f-line" name="line"/></div>
+      <div>
+        <label for="f-svc">期望服務 *</label>
+        <select id="f-svc" name="service" required>
+          <option value="">請選擇</option>
+          <option value="01">01 AI 人工智慧</option>
+          <option value="02">02 Blockchain 區塊鏈</option>
+          <option value="03">03 Web3 應用</option>
+          <option value="04">04 Cloud 雲端運算</option>
+          <option value="05">05 IoT 物聯網</option>
+          <option value="06">06 Security 資安防護</option>
+          <option value="07">07 Big Data 大數據</option>
+          <option value="08">08 Smart 智慧製造</option>
+          <option value="09">09 商品服務｜品牌設計 × 網站製作 × App 開發</option>
+        </select>
+      </div>
+      <div><label for="f-msg">專案摘要 *</label><textarea id="f-msg" name="message" required placeholder="業務痛點、既有技術棧、時程與預算區間…"></textarea></div>
+      <button class="btn btn-primary" type="submit">送出詢盤（開啟 Email 草稿）</button>
+      <p class="note" id="inq-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="note reveal">詢盤送達後，將進入六階段之「階段 1：需求盤點與盡職調查」；我們將於下一個工作天內回覆並安排訪談。</p>
+
+    <h3 class="reveal">名片聯絡資訊（已確認・可點擊）</h3>
+    <ul class="contact-list reveal">
+      <li>電話：<a href="tel:+886989958223"><b>+886-989-958-223</b></a></li>
+      <li>Email：<a href="mailto:Kris071120@icloud.com"><b>Kris071120@icloud.com</b></a></li>
+      <li>LINE：<b>kris122382</b> <span class="note">（請於 LINE 搜尋此 ID 新增）</span></li>
+    </ul>
+
+    <h3 class="reveal">聯絡常見問題</h3>
+    <div class="grid">
+      <div class="card reveal"><h3>回覆時效</h3><p>將於下一個工作天內回覆。</p></div>
+      <div class="card reveal"><h3>諮詢範圍</h3><p>初次諮詢範圍於信中確認，未核定前不作收費承諾。</p></div>
+      <div class="card reveal"><h3>保密</h3><p>可於合約階段約定 NDA；具體條款屬法務待確認項。</p></div>
+      <div class="card reveal"><h3>商品服務 App 上架</h3><p>不提供上架保證；我們會協助測試、版本建置與上架文件準備，最終審核由应用商店决定。</p></div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="main.js"></script>
+</body>
+</html>
